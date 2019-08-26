@@ -1,10 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package pkg2si4_lab_4;
-
 /**
  *
  * @author moham
@@ -34,26 +27,10 @@ public class HashTableLin {
     
     
     public void insert(int n){
-//        HashTableLin temp; //this will be used to create a larger hash table if we need it
         
         int hashIndex = n % this.size;
         
         if((this.load +1) > this.maxLoad){
-//            temp = new HashTableLin(this.maxLoad+1, this.loadFactor);
-//            for(int i=0; i<this.size; i++){
-//                if(this.table[i] != null){
-//                    temp.insert(this.table[i]);
-//                }
-//                else continue;
-//            }
-//            temp.insert(n);
-//            
-//            //making this equal temp.
-//            this.table = temp.table;
-//            this.maxLoad = temp.maxLoad;
-//            this.size = temp.size;
-//            this.load = temp.load;
-
             this.rehash();
             this.insert(n);
         }
