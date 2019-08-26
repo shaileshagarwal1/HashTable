@@ -1,11 +1,9 @@
-package pkg2si4_lab_4;
-
 /**
  *
  * @author moham
  */
-import java.util.Random;
 
+import java.util.Random;
 
 public class TestHashTable {
 
